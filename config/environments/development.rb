@@ -29,8 +29,8 @@ Rails.application.configure do
   config.assets.quiet = true
   config.log_level = :debug
 
-  config.action_cable.url = 'ws://ruby.gadflytech.com/cable'
-  config.action_cable.allowed_request_origins = ['http://ruby.gadflytech.com', 'https://ruby.gadflytech.com']
+  config.action_cable.url = 'ws://locahost'
+  config.action_cable.allowed_request_origins = ['localhost']
 
   config.hosts << "ruby.gadflytech.com"
 end
