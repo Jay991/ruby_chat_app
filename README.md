@@ -124,22 +124,4 @@ rails db:migrate RAILS_ENV=production
 rails server -e production
 ```
 
-### Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
-
-### License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-### Acknowledgements
-
-- Ruby on Rails
-- Redis
-- Devise
-- Stimulus
-- Bootstrap
-
----
-
-Feel free to customize this README further to match your specific project's needs and details.
