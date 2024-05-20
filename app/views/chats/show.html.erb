@@ -1,0 +1,17 @@
+<!-- app/views/chats/show.html.erb -->
+<h1><%= @chat.name %></h1>
+<div id="messages" data-chat-id="<%= @chat.id %>">
+  <% @chat.messages.each do |message| %>
+    <p><strong><%= message.user.email %>:</strong> <%= message.content %></p>
+  <% end %>
+</div>
+
+<%= form_with(model: [@chat, Message.new], local: true) do |form| %>
+  <div>
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+  <div>
+    <%= form.submit 'Send' %>
+  </div>
+<% end %>

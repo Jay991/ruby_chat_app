@@ -1,0 +1,14 @@
+<h1>New Chat</h1>
+<%= form_with(model: @chat, local: true) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :chat_type %>
+    <%= form.select :chat_type, Chat.chat_types.keys.map { |type| [type.titleize, type] } %>
+  </div>
+  <div>
+    <%= form.submit 'Create Chat' %>
+  </div>
+<% end %>
